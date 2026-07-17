@@ -1,0 +1,30 @@
+{
+  "schema_version": "1",
+  "open_source": true,
+  "model_name": "poker44-core-detector",
+  "model_version": "1",
+  "framework": "mlp",
+  "license": "MIT",
+  "repo_url": "https://github.com/danielstardev/yuki-demon-1",
+  "repo_commit": "",
+  "artifact_sha256": "78037f3e7de5fa576e47dc8f3d3804472ec8758522c906a37c269e3f2d8cec3e",
+  "artifact_basename": "current.joblib",
+  "implementation_sha256": "b11be9367582f25fb2bec8f0a2be6c51af88fdb6b16c0f89fda0530902cab710",
+  "implementation_files": [
+    "neurons/miner.py",
+    "poker44_ml/inference.py",
+    "poker44_ml/features.py",
+    "poker44_ml/sequence_model.py",
+    "poker44_ml/stacked.py",
+    "poker44_ml/calibration.py",
+    "poker44_ml/batch_calibration.py",
+    "poker44/validator/payload_view.py"
+  ],
+  "inference_mode": "local-joblib",
+  "training_data_statement": "Trained on the Poker44 public training benchmark (api.poker44.net). No validator-private evaluation data used.",
+  "training_data_sources": [
+    "released_training_benchmark"
+  ],
+  "private_data_attestation": "No validator-private data used. Supervised artifacts use released benchmark labels only.",
+  "data_attestation": "No validator-private data used. Supervised artifacts use released benchmark labels only."
+}
